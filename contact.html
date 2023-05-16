@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="Css/contact.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="image/logo.png" alt="" />
+            </a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="header-contact">
+            <a href="contact.html" class="active">Contact Me</a>
+        </div>
+    </header>
+    <div class="form-title">
+        <h1>GET IN TOUCH</h1>
+    </div>
+    <!-- Form Start -->
+    <form>
+        <div>
+            <div>
+                <label for="inputName"></label>
+                <input id="inputName" type="text" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="inputEmail"></label>
+                <input id="inputEmail" type="text" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="inputNumber"></label>
+                <input id="inputNumber" type="number" placeholder="Phone Number" required>
+            </div>
+            <div>
+                <label for="inputSubject"></label>
+                <select id="inputSelect">
+                    <option hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- Form End -->
+</body>
+
+</html>

@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Personal Web</title>
 </head>
+
 <body>
-    <div style="
-     font-family: 'Times New Roman', Times, serif;
-     font-size: 20px;
-     width: auto;
-     margin: 100px;
-     text-align: center;
-     padding: 50px 500px 50px;
-     border-radius: 10px;
-     box-shadow: 0 0 15px #cecece;
-    "
-    >
-        <div style="text-align: justify;">
-            <h3 style="font-family: 'Times New Roman', Times, serif;">Hi Welcome to my hut</h3>
-            <p style="font-family: 'Times New Roman', Times, serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                reprehenderit amet debitis beatae obcaecati reiciendis nulla.
-                Nihil officia dolor eius, libero,
-                eligendi non voluptatibus voluptas praesentium voluptatum,
-                omnis eaque dolores!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus minima aperiam voluptatum architecto itaque modi incidunt praesentium consequatur quam dolore molestias,
-                inventore eum! Adipisci architecto voluptatum asperiores reiciendis explicabo perferendis!
-            </p>
-            <button style=" background-color: black; color: white; border-radius: 10px; padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px;"">contact</button>
+    <!-- Header Start -->
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo"><img src="image/logo.png" alt="" /></a>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">My Project</a></li>
+            </ul>
         </div>
-        <p style="padding-right: 1180px; font-family: 'Times New Roman', Times, serif;">
-            Donwload CV
-            <img src="image/download.png" style="width: 15px;"/>
-        </p>
-        <div style="align-items: center;">
-            <img src="image/linkedin.png" style="width: 25px; padding-right: 10px;"/>
-            <img src="image/instgram.png" style="width: 25px; padding-right: 10px;"/>
-            <img src="image/facebook.png" style="width: 25px; padding-right: 10px;"/>
-            <img src="image/twitter.png " style="width: 25px; padding-right: 10px;"/>
+        <div class="header-contact">
+            <a href="contact.html">Contact Me</a>
         </div>
-        <div style="
-            width: 500px;
-            display: inline-block;
-            margin: 10px;
-            padding: 0;
-            border-radius: 20px;
-            box-shadow: 0 0 15px #cecece;
-            align-items: center;
-        ">
-            <img src="image/fotoProfile.jpg" style="width: 100%; border-radius: 10px; font-family: 'Times New Roman', Times, serif;"/>
-            <h2 style="font-family: 'Times New Roman', Times, serif;">Mochamad Saddam</h2>
-            <p style="text-align: center;">Fullstack Developer</p>
-         </div>
-    </div>
+    </header>
+    <!-- Header End -->
+    <!-- Home Start -->
+    <section class="home">
+        <div class="about">
+            <div class="home-text">
+                <h1>Hi Welcome to my hut</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                    corporis dolore, sunt nostrum, laboriosam sapiente quod consectetur
+                    distinctio amet labore accusantium quas temporibus delectus facilis
+                    dolorum, fugit molestias possimus! Sit veritatis velit enim
+                    laboriosam excepturi necessitatibus odit eligendi fugit est cum iure
+                    aliquam, hic tenetur beatae harum sapiente dolorum possimus impedit
+                    quod rerum numquam ipsam. Totam, asperiores. Culpa, maiores id.
+                </p>
+            </div>
+            <div class="contact">
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="download-cv">
+                <span>Download CV</span>
+                <a href="PDF/sezyxx.pdf"><i class="bx bx-download"></i></a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sezyxx">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://twitter.com/sezyxx">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/encdamz">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image/fotoProfile.jpg" alt="profile picture" />
+            <h2>Mochamad Saddam</h2>
+            <p>Fullstack Developer</p>
+        </div>
+    </section>
+    <!-- Home End -->
 </body>
+
 </html>

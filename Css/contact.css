@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Rubik&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    background-color: #e3e7eb;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f3f3;
+    padding: 5px 10%;
+}
+
+.header-left {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.navbar a:hover {
+    color: orangered;
+}
+
+.navbar li .active {
+    font-weight: 700;
+}
+
+.logo {
+    padding: 10px 20px 10px 0;
+}
+
+.header-contact a {
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.header-contact a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.form-title {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.form-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+form {
+    margin: 10px auto;
+    padding: 10px;
+    width: 550px;
+}
+
+form div {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+input,
+select,
+textarea {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 5px gray;
+}
+
+.btn {
+    text-align: end;
+}
+
+button {
+    margin-top: 20px;
+    color: #fff;
+    background-color: black;
+    font-size: 15px;
+    padding: 5px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-align: end;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
