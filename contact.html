@@ -45,7 +45,7 @@
             </div>
             <div>
                 <label for="inputSubject"></label>
-                <select id="inputSelect">
+                <select id="inputSubject">
                     <option value="" hidden>Select</option>
                     <option>Frontend</option>
                     <option>Backend</option>
@@ -53,14 +53,16 @@
                 </select>
             </div>
             <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <label for="inputMessage"></label>
+                <textarea id="inputMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
             </div>
             <div>
-                <button>Submit</button>
+                <button type="button" onclick="dataSubmit()">Submit</button>
             </div>
         </div>
     </form>
     <!-- Form End -->
+    <script src="contact.js"></script>
 </body>
 
 </html>
