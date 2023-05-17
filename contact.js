@@ -19,7 +19,7 @@ function dataSubmit() {
 
     let emailReceiver = 'encdamz@gmail.com'
     let a = document.createElement('a')
-    a.href = `mailto:${emailReceiver}?subject${subject}&body=Hallo, Nama saya ${name}, ${message}. Silhkan kontak saya di nomor ${phone}, terima kasih`
+    a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo, Nama saya ${name}, ${message}. Silhkan kontak saya di nomor ${phone}, terima kasih`
     a.click()
 
     console.log(name)
