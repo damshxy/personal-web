@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Rubik&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Rubik';
+  font-family: 'Poppins';
 }
 
 body {
@@ -15,9 +15,9 @@ body {
 }
 
 section {
-  width: 80%;
-  margin: 160px auto;
-  padding: 80px 5%;
+  width: 50%;
+  margin: 180px auto;
+  padding: 100px 5%;
   box-shadow: 0 0 15px rgb(192, 190, 190);
   border-radius: 10px;
   display: flex;
@@ -146,6 +146,7 @@ span {
   box-shadow: 0 0 6px #cecece;
   width: 380px;
   height: 490px;
+  
 }
 
 .card img {

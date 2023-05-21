@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Rubik&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Rubik';
+    font-family: 'Poppins';
 }
 
 body {

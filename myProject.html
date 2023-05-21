@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="stylesheet" href="Css/myProject.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>My Project</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <a href="index.html" class="logo"><img src="assest/images/logo.png" alt="" /></a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">My Project</a></li>
+      </ul>
+    </div>
+    <div class="header-contact">
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </header>
+  <div class="project">
+    <div class="project-form">
+      <div class="form-container">
+        <form onsubmit="postProject(event)">
+          <div class="input-project">
+            <h1>ADD PROJECT</h1>
+            <label for="projectName">Project Name</label>
+            <input id="projectName" type="text" />
+            <div class="start-date">
+              <div class="start-date-left">
+                <label for="input-start-date">Start Date</label>
+                <input class="start1-date" type="text" id="input-start-date" />
+              </div>
+              <div class="start-date-right">
+                <label for="input-end-date">End Date</label>
+                <input class="end-date" type="text" id="input-end-date" />
+              </div>
+            </div>
+            <div class="description">
+              <label for="input-description">Description</label>
+              <textarea id="input-description"></textarea>
+            </div>
+            <div class="checkbox">
+              <p>Techonlogies</p>
+              <div class="checkbox-left">
+                <input type="checkbox" id="nodeCheck">
+                <label for="nodeCheck">Node Js</label>
+                <input type="checkbox" id="reactCheck">
+                <label for="reactCheck">React Js</label>
+              </div>
+              <div class="checkbox-right">
+                <input type="checkbox" id="goCheck">
+                <label for="goCheck">Golang</label>
+                <input type="checkbox" id="jsCheck">
+                <label for="jsCheck">Java Script</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label>Upload Image</label>
+            <div class="inputImage">
+              <label for="input-image">
+                <p>Choose</p>
+                <img alt="" />
+              </label>
+              <input type="file" id="input-image" hidden />
+            </div>
+          </div>
+          <div class="button">
+            <button>Submit</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <hr class="line">
+  <h1>
+    MY PROJECT
+  </h1>
+    <div id="card-project" class="my-project" style="padding-top: 50px;">
+      <div class="project-flex">
+        <div class="project-flex-box">
+          <img src="Assest/images/blog-img.png">
+          <a href="detailProject.html" target="_blank">
+            <h3 class="project-name">Bootcamp Dumbways</h3>
+          </a>
+          <h5 class="duration">Duration: 8 Month</h5>
+          <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
+          <p class="project-icon">
+            <i class="fa-brands fa-node" id="node-icon"></i>
+            <i class="fa-brands fa-react" id="react-icon"></i>
+            <i class="fa-brands fa-golang" id="golang-icon"></i>
+            <i class="fa-brands fa-square-js" id="js-icon"></i>
+          </p>
+          <div class="project-button">
+            <button type="button">edit</button>
+            <button type="button">delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="Js/myProject.js" />
+</body>
+
+</html>
