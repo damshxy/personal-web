@@ -157,18 +157,19 @@ h1 {
 
 .my-project .project-flex {
   display: flex;
-  justify-content: space-evenly;
-  margin: auto 160px;
+  justify-content: center;
+  margin: auto 90px;
 }
 
 .my-project {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 0.2fr);
-  column-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5em;
 }
 
 .project-flex .project-flex-box {
-  width: 450px;
+  width: 420px;
   box-shadow: 0 0 15px #726f6f;
   margin-bottom: 20px;
   border-radius: 15px;
@@ -222,4 +223,128 @@ h1 {
   background-color: white;
   color: black;
   border: 1px solid #726f6f;
+}
+
+#barsMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-form {
+    padding: 180px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .project-flex .project-flex-box {
+    width: 420px;
+    box-shadow: 0 0 15px #726f6f;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  .project-flex .project-flex-box img {
+    width: 90%;
+    height: 40%;
+    margin: 2% 5% 0% 5%;
+    padding-top: 6px;
+    border-radius: 15px;
+  }
+
+  .project-form .form-container {
+    width: 500px;
+  }
+  
+  .project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-form form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .project-form form input,
+  textarea {
+    text-align: justify;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    resize: none;
+  }
+
+  .my-project {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    column-gap: 1em;
+  }
+  
+  .project-flex .project-flex-box {
+    position: relative;
+    width: 420px;
+    box-shadow: 0 0 15px #726f6f;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  .project-flex .project-flex-box img {
+    width: 90%;
+    height: 40%;
+    margin: 2% 5% 0% 5%;
+    padding-top: 6px;
+    border-radius: 15px;
+  }
+  
+  .project-flex .project-flex-box .description {
+    padding-bottom: 10px;
+  }
+  
+  .project-flex .project-flex-box h3, h5,p {
+    margin: 5px 10px;
+    padding: 20px;
+  }
+  
+  .project-flex div h3, .project-button {
+    margin: 5px 20px;
+    text-decoration: none;
+  }
+  
+  .project-flex-box p i {
+    padding: 5px 0;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .project-button {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  
+  .project-button button {
+    width: 40%;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .project-button button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #726f6f;
+  }
 }

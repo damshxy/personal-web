@@ -15,7 +15,7 @@ body {
 }
 
 section {
-  width: 50%;
+  width: 60%;
   margin: 180px auto;
   padding: 100px 5%;
   box-shadow: 0 0 15px rgb(192, 190, 190);
@@ -25,7 +25,7 @@ section {
 }
 
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -91,7 +91,7 @@ h1 {
 }
 
 p {
-  text-align: justify;
+  text-align: start;
   font-size: 14px;
 }
 
@@ -144,9 +144,8 @@ span {
 
 .card {
   box-shadow: 0 0 6px #cecece;
-  width: 380px;
-  height: 490px;
-  
+  width: 110%;
+
 }
 
 .card img {
@@ -164,4 +163,82 @@ span {
   font-size: 16px;
   padding: 0 16px;
   text-align: center;
+}
+
+#barsMenu {
+  display: none;
+}
+
+.responsive {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+  margin-top: 60px;
+  padding-bottom: -40px;
+}
+
+.responsive a {
+  text-decoration: none;
+  color: black;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.responsive .responsiveActive {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 920px) {
+  #barsMenu {
+    display: block;
+  }
+
+  .itemCollapse {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .responsive button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .home-text p {
+    text-align: justify;
+  }
+
+  .container .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 }

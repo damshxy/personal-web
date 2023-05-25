@@ -14,23 +14,49 @@
 </head>
 
 <body>
-    <!-- Header Start -->
+    <!-- Header -->
     <header>
         <div class="header-left">
             <a href="#" class="logo"><img src="Assest/images/logo.png" alt="" /></a>
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="myProject.html">My Project</a></li>
+                <li>
+                    <a href="#" class="active itemCollapse">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="myProject.html" class="itemCollapse">
+                        My Project
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="header-contact">
-            <a href="contact.html">Contact Me</a>
+        <div class="header-contact itemCollapse">
+            <a href="contact.html">
+                Contact Me
+            </a>
+        </div>
+        <div id="barsMenu" onclick="responsiveNavbar()">
+            <button style="background-color: transparent; border: none; cursor: pointer;">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
         </div>
     </header>
-    <!-- Header End -->
+    <!-- End Of Header -->
     <!-- Home Start -->
+    <div id="responsive" class="responsive">
+        <a href="#" class="responsiveActive">
+            Home
+        </a>
+        <a href="myProject.html">
+            My Project
+        </a>
+        <a href="contact.html">
+            <button type="button">Contact Me</button>
+        </a>
+    </div>
     <section>
-        <div class="about">
+        <div class="container">
             <div class="home-text">
                 <h1>Hi Welcome to my hut</h1>
                 <p>
@@ -44,12 +70,10 @@
                 </p>
             </div>
             <div class="contact">
-                <a href="contact.html">contact</a>
+                <a href="contact.html" class="buttonContact">contact</a>
             </div>
-            <div class="download-cv">
-                <span>Download CV</span>
-                <a href="PDF/sezyxx.pdf"><i class="bx bx-download"></i></a>
-            </div>
+            <span class="download-cv">Download CV</span>
+            <a href="PDF/sezyxx.pdf"><i class="bx bx-download"></i></a>
             <div class="social">
                 <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
                     <i class="fa-brands fa-linkedin"></i>
@@ -70,8 +94,10 @@
             <h2>Mochamad Saddam</h2>
             <p>Fullstack Developer</p>
         </div>
+        
     </section>
     <!-- Home End -->
+    <script src="Js/index.js" />
 </body>
 
 </html>
