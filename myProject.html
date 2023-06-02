@@ -11,42 +11,42 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>My Project</title>
 </head>
 
 <body>
-  <header>
-    <div class="header-left">
-      <a href="#" class="logo"><img src="Assest/images/logo.png" alt="" /></a>
-      <ul class="navbar">
-        <li>
-          <a href="index.html" class="itemCollapse">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="myProject.html" class="active itemCollapse">
-            My Project
-          </a>
-        </li>
-        <li>
-          <a href="testimonial.html">
-            Testimonials
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="header-contact itemCollapse">
-      <a href="contact.html">
-        Contact Me
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid text-center d-flex mx-5">
+      <a class="navbar-brand" href="#">
+        <img src="Assest/images/logo.png" alt="logo" />
       </a>
-    </div>
-    <div id="barsMenu" onclick="responsiveNavbar()">
-      <button style="background-color: transparent; border: none; cursor: pointer;">
-        <i class="fa-solid fa-bars-staggered"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="myproject.html">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonial.html">Testimonial</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-link">
+            <a href="contact.html" class="btn btn-outline-secondary"
+              style="background-color: black; color: white; border-style: none;">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
   <div id="responsive" class="responsive">
     <a href="index.html" class="">
       Home
@@ -110,125 +110,15 @@
             </div>
           </div>
           <div class="button">
-            <button>Submit</button>
+            <button type="button">Submit</button>
           </div>
       </div>
       </form>
     </div>
   </div>
-  <hr class="line">
-  <h1>
-    MY PROJECT
-  </h1>
-  <div id="card-project" class="my-project" style="padding-top: 50px;">
-    <div class="project-flex">
-      <div class="project-flex-box">
-        <img src="Assest/images/blog-img.png">
-        <a href="detailProject.html" target="_blank">
-          <h3 class="project-name">Bootcamp Dumbways</h3>
-        </a>
-        <h5 class="duration">Duration: 8 Month</h5>
-        <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
-        <p id="timeAgo"></p>
-        <p class="project-icon">
-          <i class="fa-brands fa-node" id="node-icon"></i>
-          <i class="fa-brands fa-react" id="react-icon"></i>
-          <i class="fa-brands fa-golang" id="golang-icon"></i>
-          <i class="fa-brands fa-square-js" id="js-icon"></i>
-        </p>
-        <div class="project-button">
-          <button type="button">edit</button>
-          <button type="button">delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-flex">
-      <div class="project-flex-box">
-        <img src="Assest/images/blog-img.png">
-        <a href="detailProject.html" target="_blank">
-          <h3 class="project-name">Bootcamp Dumbways</h3>
-        </a>
-        <h5 class="duration">Duration: 8 Month</h5>
-        <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
-        <p id="timeAgo"></p>
-        <p class="project-icon">
-          <i class="fa-brands fa-node" id="node-icon"></i>
-          <i class="fa-brands fa-react" id="react-icon"></i>
-          <i class="fa-brands fa-golang" id="golang-icon"></i>
-          <i class="fa-brands fa-square-js" id="js-icon"></i>
-        </p>
-        <div class="project-button">
-          <button type="button">edit</button>
-          <button type="button">delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-flex">
-      <div class="project-flex-box">
-        <img src="Assest/images/blog-img.png">
-        <a href="detailProject.html" target="_blank">
-          <h3 class="project-name">Bootcamp Dumbways</h3>
-        </a>
-        <h5 class="duration">Duration: 8 Month</h5>
-        <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
-        <p id="timeAgo"></p>
-        <p class="project-icon">
-          <i class="fa-brands fa-node" id="node-icon"></i>
-          <i class="fa-brands fa-react" id="react-icon"></i>
-          <i class="fa-brands fa-golang" id="golang-icon"></i>
-          <i class="fa-brands fa-square-js" id="js-icon"></i>
-        </p>
-        <div class="project-button">
-          <button type="button">edit</button>
-          <button type="button">delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-flex">
-      <div class="project-flex-box">
-        <img src="Assest/images/blog-img.png">
-        <a href="detailProject.html" target="_blank">
-          <h3 class="project-name">Bootcamp Dumbways</h3>
-        </a>
-        <h5 class="duration">Duration: 8 Month</h5>
-        <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
-        <p id="timeAgo"></p>
-        <p class="project-icon">
-          <i class="fa-brands fa-node" id="node-icon"></i>
-          <i class="fa-brands fa-react" id="react-icon"></i>
-          <i class="fa-brands fa-golang" id="golang-icon"></i>
-          <i class="fa-brands fa-square-js" id="js-icon"></i>
-        </p>
-        <div class="project-button">
-          <button type="button">edit</button>
-          <button type="button">delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="project-flex">
-      <div class="project-flex-box">
-        <img src="Assest/images/blog-img.png">
-        <a href="detailProject.html" target="_blank">
-          <h3 class="project-name">Bootcamp Dumbways</h3>
-        </a>
-        <h5 class="duration">Duration: 8 Month</h5>
-        <p class="descriotion">Bootcamp dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
-        <p id="timeAgo"></p>
-        <p class="project-icon">
-          <i class="fa-brands fa-node" id="node-icon"></i>
-          <i class="fa-brands fa-react" id="react-icon"></i>
-          <i class="fa-brands fa-golang" id="golang-icon"></i>
-          <i class="fa-brands fa-square-js" id="js-icon"></i>
-        </p>
-        <div class="project-button">
-          <button type="button">edit</button>
-          <button type="button">delete</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
   <script src="Js/myProject.js" />
   <script src="Js/index.js" />
 </body>

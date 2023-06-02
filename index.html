@@ -10,101 +10,116 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Personal Web</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-left">
-            <a href="#" class="logo"><img src="Assest/images/logo.png" alt="" /></a>
-            <ul class="navbar">
-                <li>
-                    <a href="#" class="active itemCollapse">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="myProject.html" class="itemCollapse">
-                        My Project
-                    </a>
-                </li>
-                <li>
-                    <a href="testimonial.html">
-                        Testimonials
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="header-contact itemCollapse">
-            <a href="contact.html">
-                Contact Me
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid text-center d-flex mx-5">
+            <a class="navbar-brand" href="#">
+                <img src="Assest/images/logo.png" alt="logo" />
             </a>
-        </div>
-        <div id="barsMenu" onclick="responsiveNavbar()">
-            <button style="background-color: transparent; border: none; cursor: pointer;">
-                <i class="fa-solid fa-bars-staggered"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myproject.html">Add Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial.html">Testimonial</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-link">
+                        <a href="contact.html" class="btn btn-outline-secondary" style="background-color: black; color: white; border-style: none;">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
-    <!-- End Of Header -->
+    </nav>
+    <!-- End Of Navbar -->
     <!-- Home Start -->
-    <div id="responsive" class="responsive">
-        <a href="#" class="responsiveActive">
-            Home
-        </a>
-        <a href="myProject.html">
-            My Project
-        </a>
-        <a href="testimonial.html">
-            Testimonial
-        </a>
-        <a href="contact.html">
-            <button type="button">Contact Me</button>
-        </a>
-    </div>
-    <section>
+    <section class="profile" id="profile">
         <div class="container">
-            <div class="home-text">
-                <h1>Hi Welcome to my hut</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                    corporis dolore, sunt nostrum, laboriosam sapiente quod consectetur
-                    distinctio amet labore accusantium quas temporibus delectus facilis
-                    dolorum, fugit molestias possimus! Sit veritatis velit enim
-                    laboriosam excepturi necessitatibus odit eligendi fugit est cum iure
-                    aliquam, hic tenetur beatae harum sapiente dolorum possimus impedit
-                    quod rerum numquam ipsam. Totam, asperiores. Culpa, maiores id.
-                </p>
-            </div>
-            <div class="contact">
-                <a href="contact.html" class="buttonContact">contact</a>
-            </div>
-            <span class="download-cv">Download CV</span>
-            <a href="PDF/sezyxx.pdf"><i class="bx bx-download"></i></a>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/sezyxx">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://twitter.com/sezyxx">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/encdamz">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+            <div class="row justify-content-between">
+                <div class="col-md-6 p-5 mt-5 text-black">
+                    <h3 class="fw-bold">Hi Welcome to my hut</h3>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus harum ad neque sequi
+                        laboriosam repellat illum? Cumque, consequuntur eligendi animi doloribus error aliquam quisquam,
+                        debitis minus excepturi, eum illo sint?
+                    </p>
+                    <a href="contact.html" class="btn btn-primary mx-2" style="background-color: black; color: white; border-style: none;">Contact</a>
+                    download cv <a href="PDF/sezyxx.pdf" class="mx-1"><i class="fa-solid fa-arrow-down" style="text-decoration: none; color: black;"></i></a>
+                    <div class="iconSocial icon mt-5 fs-4 mx-2">
+                        <a href="https://www.linkedin.com/in/mochamad-saddam-a44b87249/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sezyxx">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/sezyxx">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/encdamz">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 p-5">
+                    <div class="card mx-2 p-2">
+                        <img src="Assest/images/fotoProfile.jpg" class="card-img-top rounded"/>
+                        <div class="card-body text-center">
+                            <h3>Mochamad Saddam</h3>
+                            <p>Fullstack Developer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="Assest/images/fotoProfile.jpg" alt="profile picture" />
-            <h2>Mochamad Saddam</h2>
-            <p>Fullstack Developer</p>
-        </div>
-        
     </section>
+    <!-- My Project -->
+    <hr>
+    <div>
+        <h1 class="d-flex justify-content-center">My Project</h1>
+    </div>
+    <div class="container text-center card" style="width: 20%;">
+        <div class="row">
+            <div class="col">
+                <img src="Assest/images/blog-img.png" style="width: 100%; padding-top: 15px; border-radius: 8px;">
+                <p class="durationMonth pt-4" style="display: flex; justify-content: start;">Durationn : 8 Month</p>
+                <p class="d-flex" style="display: flex; text-align: justify;">Bootcamp Dumbways ini untuk orang orang yang ingin alih profesi menjadi IT</p>
+                <p class="icon" style="font-size: 20px; display: flex; justify-content: start;">
+                    <i class="fa-brands fa-node" id="node-icon" style="padding-left: 5px;"></i>
+                    <i class="fa-brands fa-react" id="react-icon" style="padding-left: 5px;"></i>
+                    <i class="fa-brands fa-golang" id="golang-icon" style="padding-left: 5px;"></i>
+                    <i class="fa-brands fa-square-js" id="js-icon" style="padding-left: 5px;"></i>
+                </p>
+                <div class="buttons">
+                    <button type="button" class="button btn btn-secondary btn-sm"
+                        style="background-color: black; color: white;">
+                        Edit
+                    </button>
+                    <button type="button" class="button btn btn-secondary btn-sm"
+                        style="background-color: black; color: white;">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Home End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" />
     <script src="Js/index.js" />
 </body>
 

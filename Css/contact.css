@@ -108,20 +108,18 @@ textarea {
     box-shadow: 0 0 5px gray;
 }
 
-.btn {
-    text-align: end;
+.buttonContact {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
 }
 
-button {
-    margin-top: 20px;
-    color: #fff;
+.buttonContact button {
     background-color: black;
-    font-size: 15px;
-    padding: 5px 30px;
-    border-radius: 25px;
-    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    text-align: end;
 }
 
 button:hover {
