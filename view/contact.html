@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="public/Css/contact.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid text-center d-flex mx-5">
+            <a class="navbar-brand" href="#">
+                <img src="public/images/logo.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myProject">Add Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial">Testimonial</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-link">
+                        <a href="contact" class="btn btn-outline-secondary"
+                            style="background-color: black; color: white; border-style: none;">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <div class="form-title">
+        <h1>GET IN TOUCH</h1>
+    </div>
+    <!-- Form Start -->
+    <form>
+        <div class="containerContact">
+            <div>
+                <label for="inputName">Your Name</label>
+                <input id="inputName" type="text" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="inputEmail">Email</label>
+                <input id="inputEmail" type="text" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="inputNumber">Phone Number</label>
+                <input id="inputNumber" type="number" placeholder="Phone Number" required>
+            </div>
+            <div>
+                <label for="inputSubject"></label>
+                <select id="inputSubject">
+                    <option value="" hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+            <div>
+                <label for="inputMessage">Your Massage</label>
+                <textarea id="inputMessage" cols="30" rows="10" placeholder="Your Message" style="resize: none;"></textarea>
+            </div>
+            <div class="buttonContact">
+                <button type="button" onclick="dataSubmit()">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- Form End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="public/Js/contact.js"></script>
+</body>
+
+</html>
