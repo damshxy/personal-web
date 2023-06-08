@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"strconv"
 	"text/template"
+	"fmt"
 
 	"github.com/labstack/echo/v4"
 )
@@ -55,10 +56,10 @@ func addedProject(c echo.Context) error {
 	startDate := c.FormValue("input-start-date")
 	endDate := c.FormValue("input-end-date")
 
-	println("Title :" + title)
-	println("Description :" + description)
-	println("Start Date :" + startDate)
-	println("End Date :" + endDate)
+	fmt.println("Title :" + title)
+	fmt.println("Description :" + description)
+	fmt.println("Start Date :" + startDate)
+	fmt.println("End Date :" + endDate)
 
 	return c.Redirect(http.StatusMovedPermanently, "/")
 }
