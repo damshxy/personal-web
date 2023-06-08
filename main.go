@@ -56,10 +56,10 @@ func addedProject(c echo.Context) error {
 	startDate := c.FormValue("input-start-date")
 	endDate := c.FormValue("input-end-date")
 
-	fmt.println("Title :" + title)
-	fmt.println("Description :" + description)
-	fmt.println("Start Date :" + startDate)
-	fmt.println("End Date :" + endDate)
+	fmt.Println("Title :" + title)
+	fmt.Println("Description :" + description)
+	fmt.Println("Start Date :" + startDate)
+	fmt.Println("End Date :" + endDate)
 
 	return c.Redirect(http.StatusMovedPermanently, "/")
 }
